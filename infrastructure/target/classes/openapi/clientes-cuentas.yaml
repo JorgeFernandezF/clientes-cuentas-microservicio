@@ -1,0 +1,56 @@
+
+openapi: 3.0.3
+info:
+  title: Microservicio de Gestión de Cuentas Bancarias
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /clientes:
+    get:
+      summary: Obtener todos los clientes con sus cuentas
+      responses:
+        '200': { description: OK }
+  /clientes/mayores-de-edad:
+    get:
+      summary: Obtener clientes mayores de 18 años
+      responses:
+        '200': { description: OK }
+  /clientes/con-cuenta-superior-a/{cantidad}:
+    get:
+      summary: Obtener clientes con suma de cuentas superior a la cantidad
+      parameters:
+        - name: cantidad
+          in: path
+          required: true
+          schema: { type: number, format: double }
+      responses:
+        '200': { description: OK }
+  /clientes/{dni}:
+    get:
+      summary: Obtener cliente por DNI
+      parameters:
+        - name: dni
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: OK }
+        '404': { description: No encontrado }
+  /cuentas:
+    post:
+      summary: Alta de nueva cuenta (crea cliente si no existe)
+      requestBody: { required: true }
+      responses:
+        '200': { description: OK }
+  /cuentas/{idCuenta}:
+    put:
+      summary: Actualizar el dinero de una cuenta
+      parameters:
+        - name: idCuenta
+          in: path
+          required: true
+          schema: { type: integer, format: int64 }
+      requestBody: { required: true }
+      responses:
+        '200': { description: OK }

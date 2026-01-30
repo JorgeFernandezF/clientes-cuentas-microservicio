@@ -1,0 +1,10 @@
+com\cuentabancaria\application\in\ObtenerClientePorDniUseCase.class
+com\cuentabancaria\application\in\ObtenerClientesConSaldoSuperiorUseCase.class
+com\cuentabancaria\application\out\CuentaRepositoryPort.class
+com\cuentabancaria\application\in\CrearCuentaUseCase.class
+com\cuentabancaria\application\in\ObtenerMayoresDeEdadUseCase.class
+com\cuentabancaria\application\in\ObtenerClientesUseCase.class
+com\cuentabancaria\application\service\ClienteService.class
+com\cuentabancaria\application\out\ClienteRepositoryPort.class
+com\cuentabancaria\application\in\ActualizarSaldoCuentaUseCase.class
+com\cuentabancaria\application\service\CuentaService.class

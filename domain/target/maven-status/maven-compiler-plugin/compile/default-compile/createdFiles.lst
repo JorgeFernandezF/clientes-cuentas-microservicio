@@ -1,0 +1,4 @@
+com\cuentabancaria\domain\model\CuentaBancaria.class
+com\cuentabancaria\domain\model\Cliente$ClienteBuilder.class
+com\cuentabancaria\domain\model\Cliente.class
+com\cuentabancaria\domain\model\CuentaBancaria$CuentaBancariaBuilder.class
