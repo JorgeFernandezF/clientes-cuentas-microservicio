@@ -4,10 +4,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.management.InstanceNotFoundException;
+
 @RestControllerAdvice
 public class RestExceptionHandler {
-    @ExceptionHandler(IllegalArgumentException.class)
-    ResponseEntity<?> handleIllegalArgument(IllegalArgumentException ex) {
-        return ResponseEntity.badRequest().body(ex.getMessage());
+    @ExceptionHandler(InstanceNotFoundException.class)
+    ResponseEntity<?> handleInstanceNotFound(InstanceNotFoundException ex) {
+        return ResponseEntity.notFound().build();
     }
 }

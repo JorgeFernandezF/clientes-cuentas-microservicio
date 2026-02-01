@@ -8,6 +8,8 @@ import com.cuentabancaria.domain.model.CuentaBancaria;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.management.InstanceNotFoundException;
+
 @Service
 @RequiredArgsConstructor
 public class CuentaService implements CrearCuentaUseCase, ActualizarSaldoCuentaUseCase {
@@ -42,9 +44,9 @@ public class CuentaService implements CrearCuentaUseCase, ActualizarSaldoCuentaU
 
     //Actualiza la cantidad total en una cuenta dada
     @Override
-    public CuentaBancaria actualizar(Long idCuenta, Double total) {
+    public CuentaBancaria actualizar(Long idCuenta, Double total) throws InstanceNotFoundException {
         CuentaBancaria c = cuentas.findById(idCuenta)
-                .orElseThrow(() -> new IllegalArgumentException("Cuenta no encontrada: " + idCuenta));
+                .orElseThrow(() -> new InstanceNotFoundException("Cuenta no encontrada: " + idCuenta));
         c.setTotal(total);
         return cuentas.save(c);
     }

@@ -6,6 +6,7 @@ import com.cuentabancaria.domain.model.Cliente;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.management.InstanceNotFoundException;
 import java.util.List;
 
 @Service
@@ -26,9 +27,9 @@ public class ClienteService implements
 
     //Busqueda de cliente por dni
     @Override
-    public Cliente handle(String dni) {
+    public Cliente handle(String dni) throws InstanceNotFoundException {
         return clientes.findByDniWithCuentas(dni)
-                .orElseThrow(() -> new IllegalArgumentException("Cliente no encontrado: " + dni));
+                .orElseThrow(() -> new InstanceNotFoundException("Cliente no encontrado: " + dni));
     }
 
     //Búsqueda de clientes mayores a 18 años

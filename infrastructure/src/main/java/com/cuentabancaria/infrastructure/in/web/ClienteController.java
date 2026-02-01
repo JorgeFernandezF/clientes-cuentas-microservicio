@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.management.InstanceNotFoundException;
 import java.util.List;
 
 @RestController
@@ -42,7 +43,7 @@ public class ClienteController {
 
     //Obtiene un cliente buscando por su dni
     @GetMapping("/{dni}")
-    public ResponseEntity<ClienteDto> getPorDni(@PathVariable("dni") String dni) {
+    public ResponseEntity<ClienteDto> getPorDni(@PathVariable("dni") String dni) throws InstanceNotFoundException {
         return ResponseEntity.ok(DtoMapper.toDto(porDni.handle(dni)));
     }
 }

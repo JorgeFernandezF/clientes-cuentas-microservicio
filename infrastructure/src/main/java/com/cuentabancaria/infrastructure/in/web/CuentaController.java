@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.management.InstanceNotFoundException;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/cuentas")
@@ -27,7 +29,7 @@ public class CuentaController {
 
     //Actualiza una cuenta a una cantidad dada
     @PutMapping("/{id}")
-    public ResponseEntity<CuentaDto> actualizar(@PathVariable("id") Long id, @RequestBody ActualizarRequest r) {
+    public ResponseEntity<CuentaDto> actualizar(@PathVariable("id") Long id, @RequestBody ActualizarRequest r) throws InstanceNotFoundException {
         return ResponseEntity.ok(DtoMapper.toDto(actualizar.actualizar(id, r.total())));
     }
 }

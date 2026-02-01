@@ -46,4 +46,10 @@ class ClienteControllerTest extends BaseWebTest {
            .andExpect(jsonPath("$.dni").value("11111111A"))
            .andExpect(jsonPath("$.cuentas.length()").value(2));
     }
+
+    @Test @DisplayName("GET /clientes/{dni} devuelve cliente con sus cuentas")
+    void getPorDni_NotFound() throws Exception {
+        mvc.perform(get("/clientes/11111112A"))
+            .andExpect(status().isNotFound());
+    }
 }
