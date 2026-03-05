@@ -1,0 +1,4 @@
+com\clientescuentas\integration\controller\CuentaControllerIT.class
+com\clientescuentas\integration\controller\ClienteRepositoryAdapterIT.class
+com\clientescuentas\integration\TestInfraApplication.class
+com\clientescuentas\integration\controller\ClienteControllerIT.class

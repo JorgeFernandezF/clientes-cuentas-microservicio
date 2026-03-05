@@ -1,0 +1,16 @@
+com\clientescuentas\infrastructure\adapter\ClienteRepositoryAdapter.class
+com\clientescuentas\infrastructure\dto\cliente\ClienteDto.class
+com\clientescuentas\infrastructure\dto\cuenta\CuentaDto.class
+com\clientescuentas\infrastructure\adapter\CuentaRepositoryAdapter.class
+com\clientescuentas\infrastructure\controller\CuentaController.class
+com\clientescuentas\infrastructure\repository\CuentaRepository.class
+com\clientescuentas\infrastructure\dto\common\PageDto.class
+com\clientescuentas\infrastructure\web\GlobalExceptionHandler.class
+com\clientescuentas\infrastructure\entity\CuentaEntity.class
+com\clientescuentas\infrastructure\entity\ClienteEntity.class
+com\clientescuentas\infrastructure\entity\CuentaEntity$CuentaEntityBuilder.class
+com\clientescuentas\infrastructure\repository\ClienteRepository.class
+com\clientescuentas\infrastructure\dto\cuenta\ActualizarTotalRequest.class
+com\clientescuentas\infrastructure\entity\ClienteEntity$ClienteEntityBuilder.class
+com\clientescuentas\infrastructure\controller\ClienteController.class
+com\clientescuentas\infrastructure\dto\cuenta\CrearCuentaRequest.class

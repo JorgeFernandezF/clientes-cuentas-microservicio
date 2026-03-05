@@ -1,0 +1,14 @@
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\controller\CuentaController.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\dto\cuenta\CrearCuentaRequest.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\web\GlobalExceptionHandler.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\controller\ClienteController.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\dto\common\PageDto.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\repository\ClienteRepository.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\entity\CuentaEntity.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\dto\cuenta\ActualizarTotalRequest.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\entity\ClienteEntity.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\adapter\ClienteRepositoryAdapter.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\adapter\CuentaRepositoryAdapter.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\repository\CuentaRepository.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\dto\cuenta\CuentaDto.java
+C:\clientes-cuentas-microservicio\infrastructure\src\main\java\com\clientescuentas\infrastructure\dto\cliente\ClienteDto.java

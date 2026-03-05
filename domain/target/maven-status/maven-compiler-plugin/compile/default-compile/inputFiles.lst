@@ -1,0 +1,10 @@
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\model\PageQuery.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\usecase\ClientesMayoresUseCase.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\usecase\BuscarClientesUseCase.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\usecase\ClientesSaldoSuperiorUseCase.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\model\Cliente.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\model\PageResult.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\port\ClienteRepositoryPort.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\model\CuentaBancaria.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\port\CuentaRepositoryPort.java
+C:\clientes-cuentas-microservicio\domain\src\main\java\com\clientescuentas\domain\usecase\BuscarClientePorDniUseCase.java

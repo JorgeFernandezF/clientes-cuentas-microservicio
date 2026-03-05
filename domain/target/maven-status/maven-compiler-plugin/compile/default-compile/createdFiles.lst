@@ -1,0 +1,12 @@
+com\clientescuentas\domain\model\Cliente$ClienteBuilder.class
+com\clientescuentas\domain\usecase\BuscarClientePorDniUseCase.class
+com\clientescuentas\domain\port\CuentaRepositoryPort.class
+com\clientescuentas\domain\usecase\BuscarClientesUseCase.class
+com\clientescuentas\domain\usecase\ClientesSaldoSuperiorUseCase.class
+com\clientescuentas\domain\usecase\ClientesMayoresUseCase.class
+com\clientescuentas\domain\model\CuentaBancaria.class
+com\clientescuentas\domain\model\PageResult.class
+com\clientescuentas\domain\model\CuentaBancaria$CuentaBancariaBuilder.class
+com\clientescuentas\domain\model\PageQuery.class
+com\clientescuentas\domain\port\ClienteRepositoryPort.class
+com\clientescuentas\domain\model\Cliente.class
