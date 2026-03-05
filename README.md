@@ -57,7 +57,7 @@ Todos los listados (p. ej. `/clientes`) están realizados con paginación en BD.
 - Respuestas con `404 Not Found` ante datos no encontrados.
 
 ## 7. Bootstrap
-- RELLENAR.
+- Este módulo actúa como punto de entrada de la aplicación, separando la lógica de negocio del arranque de Spring Boot.
 - El módulo **bootstrap** es el **único ejecutable**.
 
 ## 8. Ejecución
