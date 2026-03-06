@@ -157,6 +157,8 @@ El microservicio implementa paginación real en base de datos, desacoplada media
     - Filtra en BD con `SUM(total)` + `HAVING`
     - Pagina la lista resultante de DNIs para compatibilidad con H2, 
       en otro caso (PostgreSQL/MySQL) se implementaría directamente en la query.
+    - Esto se debe a un error 'No Property Full Found' al hacer la  paginación
+      con GROUPBY + HAVING en H2, puede verse más información del error en este [enlace](https://www.w3tutorials.net/blog/spring-data-jpa-query-and-pageable/) 
   
 
 ### 11.3 Respuesta ejemplo (PageDto)
